@@ -51,18 +51,24 @@ const Header = () => {
   };
 
   return (
-    <div className="p-3 shadow-sm flex justify-between items-center px-5">
-      <img src="/logo.png" alt="Logo" className="w-[300px] h-[100px]" />
+    <div className="p-3 shadow-sm flex justify-between items-center px-5 max-sm:flex-col">
+      <a href="/">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="w-[300px] h-[100px] max-sm:w-full"
+        />
+      </a>
       <div>
         {user ? (
           <div className="flex items-center gap-5 ">
             <a href="/create-trip">
-              <Button variant="outline" className="rounded-full">
+              <Button variant="outline" className="border-black rounded-full">
                 + Create a Trip
               </Button>
             </a>
             <a href="/my-trips">
-              <Button variant="outline" className="rounded-full">
+              <Button variant="outline" className="border-black rounded-full">
                 My Trips
               </Button>
             </a>
