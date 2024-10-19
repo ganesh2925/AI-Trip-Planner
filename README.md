@@ -1,6 +1,6 @@
 # React + Vite
 
-` a minimal setup to get` [React working in Vite with HMR and some ESLint rules].
+` a minimal setup to get` [React working in Vite with HMR and some ESLint rules](https://github.com/ganesh2925).
 
 `Currently`, two official plugins are available:
 
