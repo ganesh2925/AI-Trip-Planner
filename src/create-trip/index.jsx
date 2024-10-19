@@ -5,7 +5,7 @@ import {
   SelectBudgetOption,
   SelectTravelesList,
 } from "@/constants/options";
-import { chatSession } from "@/service/AiModal";
+import { chatSession } from "../service/AIModal";
 import React, { useEffect, useState } from "react";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import { toast } from "sonner";
