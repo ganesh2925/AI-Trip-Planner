@@ -31,7 +31,7 @@ Rename .env.local.example to .env.local and fill in the necessary environment va
 
 ## Run the development server:
 
-`npm run dev`
+`npm run dev`<br />
 The application will be running at `http://localhost:5173/`.
 
 ## Usage
@@ -58,10 +58,10 @@ The application will be running at `http://localhost:5173/`.
 
 ## Available Scripts
 
-`npm run dev` : Run the development server.
-`npm run build` : Create a production build of the app.
-`npm run serve` : Serve the production build locally.
-`npm run lint` : Run the linter to check for code issues.
+- `npm run dev` : Run the development server.
+- `npm run build` : Create a production build of the app.
+- `npm run serve` : Serve the production build locally.
+- `npm run lint` : Run the linter to check for code issues.
 
 ## Contributing
 
