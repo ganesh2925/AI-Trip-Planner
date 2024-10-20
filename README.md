@@ -1,5 +1,6 @@
 # AI Trip Planner
-#### This project is an AI-powered trip planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
+
+### This project is an AI-powered trip planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
 
 ## Features
 * <b>AI-powered itinerary creation:</b> Get personalized trip plans based on your preferences.
@@ -41,19 +42,19 @@ The application will be running at `http://localhost:5173/`.
 
 ## Project Structure
 
-`├── public/                # Static assets`
-`├── src/`
-`│   ├── assets/            # Images, icons, and static files`
-`│   ├── components/        # Reusable UI components`
-`│   ├── create-trip/       # Components related to creating a trip`
-`│   ├── service/           # API services and utilities`
-`│   ├── view-trip/         # Components for viewing trips`
-`│   ├── App.jsx            # Main app component`
-`│   ├── main.jsx           # Application entry point`
-`├── .env.local             # Environment variables (example file)`
+`├── public/                # Static assets`<br />
+`├── src/`<br />
+`│   ├── assets/            # Images, icons, and static files`<br />
+`│   ├── components/        # Reusable UI components`<br />
+`│   ├── create-trip/       # Components related to creating a trip`<br />
+`│   ├── service/           # API services and utilities`<br />
+`│   ├── view-trip/         # Components for viewing trips`<br />
+`│   ├── App.jsx            # Main app component`<br />
+`│   ├── main.jsx           # Application entry point`<br />
+`├── .env.local             # Environment variables (example file)`<br />
 `├── package.json           # Project metadata and dependencies`
-`├── vite.config.js         # Vite configuration`
-`└── tailwind.config.js     # Tailwind CSS configuration`
+`├── vite.config.js         # Vite configuration`<br />
+`└── tailwind.config.js     # Tailwind CSS configuration`<br />
 
 ## Available Scripts
 
