@@ -1,6 +1,6 @@
 # AI Trip Planner
 
-### This project is an AI-powered trip planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
+#### This project is an AI-powered trip planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
 
 ## Features
 * <b>AI-powered itinerary creation:</b> Get personalized trip plans based on your preferences.
@@ -19,7 +19,7 @@
 
 ## Clone the repository:
 
-`git clone: https://github.com/ganesh2925/AI-Trip-Planner`
+`git clone: https://github.com/ganesh2925/AI-Trip-Planner`< br/>
 `cd ai-trip-planner`
 
 ## Install dependencies:
