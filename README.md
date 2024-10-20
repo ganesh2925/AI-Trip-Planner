@@ -2,6 +2,9 @@
 
 #### This project is an AI-powered trip planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
 
+![Full-Size-Screeshot](https://github.com/user-attachments/assets/64b411b3-713f-4e45-9191-564aea0fe269)
+<br />
+
 ## Features
 * <b>AI-powered itinerary creation:</b> Get personalized trip plans based on your preferences.
 * <b>Interactive UI:</b> Navigate through your trips with ease using a sleek and responsive interface.
