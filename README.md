@@ -52,7 +52,7 @@ The application will be running at `http://localhost:5173/`.
 `│   ├── App.jsx            # Main app component`<br />
 `│   ├── main.jsx           # Application entry point`<br />
 `├── .env.local             # Environment variables (example file)`<br />
-`├── package.json           # Project metadata and dependencies`
+`├── package.json           # Project metadata and dependencies`<br />
 `├── vite.config.js         # Vite configuration`<br />
 `└── tailwind.config.js     # Tailwind CSS configuration`<br />
 
