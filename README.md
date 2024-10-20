@@ -19,7 +19,7 @@
 
 ## Clone the repository:
 
-`git clone: https://github.com/ganesh2925/AI-Trip-Planner`< br/>
+`git clone: https://github.com/ganesh2925/AI-Trip-Planner`<br />
 `cd ai-trip-planner`
 
 ## Install dependencies:
