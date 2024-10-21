@@ -6,7 +6,7 @@ import {
   SelectTravelesList,
 } from "@/constants/options";
 import { chatSession } from "../service/AIModal";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 import { toast } from "sonner";
 import {
@@ -35,10 +35,6 @@ const CreateTrip = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  useEffect(() => {
-    console.log(formData);
-  }, [formData]);
-
   const login = useGoogleLogin({
     onSuccess: (codeResponse) => {
       GetUserProfile(codeResponse);
@@ -51,10 +47,10 @@ const CreateTrip = () => {
   const OnGenerateTrip = async () => {
     const user = localStorage.getItem("user");
 
-    if (!user) {
-      setOpenDailog(true);
-      return;
-    }
+    // if (!user) {
+    //   setOpenDailog(true);
+    //   return;
+    // }
     if (
       (formData?.NumberOfDays > 10 && !formData?.location) ||
       !formData?.budget ||
@@ -63,8 +59,8 @@ const CreateTrip = () => {
       toast("Please fill the all detailes");
       return;
     } else {
-      if (formData?.NumberOfDays > 10) {
-        toast("Number of days should be less than 10 Days");
+      if (formData?.NumberOfDays > 5) {
+        toast("Number of days should be less than 5 Days");
       } else {
         setLoading(true);
         toast("Wait... for the Trip Planing");
@@ -76,9 +72,7 @@ const CreateTrip = () => {
           .replace("{traveler}", formData?.traveler)
           .replace("{budget}", formData?.budget)
           .replace("{totalDays}", formData?.noofDays);
-        // console.log(FINAL_PROMPT);
         const result = await chatSession.sendMessage(FINAL_PROMPT);
-        // console.log(result?.response?.text());
         setLoading(false);
         SaveAiTrip(result?.response?.text());
       }
@@ -114,14 +108,12 @@ const CreateTrip = () => {
         console.log(resp);
         localStorage.setItem("user", JSON.stringify(resp?.data));
         setOpenDailog(false);
-        // toast("Login Successfull");
         OnGenerateTrip();
       });
   };
 
   return (
     <div className="sm:px-10 md:px-32 lg:px-56 max-sm:p-10">
-      {/* xl:px-10 px-5 mt-10 */}
       <h2 className="front-bold text-3xl mt-2">
         Tell us your travel preferences 🏕️🏝️
       </h2>
@@ -216,7 +208,6 @@ const CreateTrip = () => {
         <Dialog open={openDailog} disabled="ture">
           <DialogContent>
             <DialogHeader>
-              {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
               <DialogDescription>
                 <img src="/logo.png" className="w-50 h-20" />
                 <h2 className="fount-bold text-lg mt-7">Sign In With Google</h2>
