@@ -47,10 +47,10 @@ const CreateTrip = () => {
   const OnGenerateTrip = async () => {
     const user = localStorage.getItem("user");
 
-    // if (!user) {
-    //   setOpenDailog(true);
-    //   return;
-    // }
+    if (!user) {
+      setOpenDailog(true);
+      return;
+    }
     if (
       (formData?.NumberOfDays > 10 && !formData?.location) ||
       !formData?.budget ||
