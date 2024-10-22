@@ -68,7 +68,7 @@ Rename .env.local.example to .env.local and fill in the necessary environment va
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+- Contributions are welcome! Please follow these steps:
 1. Fork the repository.
 2. Create a new feature branch `git checkout -b feature/my-feature`.
 3. Commit your changes `git commit -m 'Add some feature`.
