@@ -49,9 +49,9 @@ npm run dev
 ```
 <br />
 - The application will be running at
-```
+````
 http://localhost:5173/
-```
+````
 
 ## Usage
 
