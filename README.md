@@ -48,7 +48,10 @@ Rename .env.local.example to .env.local and fill in the necessary environment va
 npm run dev
 ```
 <br />
-- The application will be running at ``http://localhost:5173/``
+- The application will be running at
+```
+http://localhost:5173/
+```
 
 ## Usage
 
