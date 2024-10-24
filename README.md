@@ -88,7 +88,22 @@ http://localhost:5173/
 
 - Contributions are welcome! Please follow these steps:
 1. Fork the repository.
-2. Create a new feature branch `git checkout -b feature/my-feature`.
-3. Commit your changes `git commit -m 'Add some feature`.
-4. Push to the branch `git push origin feature/my-feature`.
-5. Open a pull request.
+2. Create a new feature branch.
+
+```
+git checkout -b feature/my-feature
+```
+
+4. Commit your changes.
+
+```
+git commit -m 'Add some feature
+```
+
+5. Push to the branch.
+
+```
+git push origin feature/my-feature
+```
+
+6. Open a pull request.
