@@ -23,14 +23,22 @@
 
 ## Clone the repository:
 
-`git clone: https://github.com/ganesh2925/AI-Trip-Planner`<br />
-`cd ai-trip-planner`
+```
+git clone: https://github.com/ganesh2925/AI-Trip-Planner
+```
+<br />
+```
+cd ai-trip-planner
+```
 
 ## Install dependencies:
 
-`npm install`
+```
+npm install
+```
 
 ## Set up environment variables:
+
 Rename .env.local.example to .env.local and fill in the necessary environment variables, including service API keys (Google Maps, AI API, etc.).
 
 ## Run the development server:
