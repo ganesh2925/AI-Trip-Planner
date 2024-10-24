@@ -49,7 +49,7 @@ npm run dev
 ```
 <br />
 
-- The application will be running at
+- The application will be running at this URL:
 
 ```
 http://localhost:5173/
