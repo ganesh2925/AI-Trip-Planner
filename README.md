@@ -40,7 +40,7 @@ npm install
 
 ## Set up environment variables:
 
-Rename .env.local.example to .env.local and fill in the necessary environment variables, including service API keys (Google Maps, AI API, etc.).
+Rename `.env.local.example` to `.env.local` and fill in the necessary environment variables, including service API keys (Google Maps, AI API, etc.).
 
 ## Run the development server:
 
