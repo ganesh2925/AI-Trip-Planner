@@ -1,6 +1,7 @@
 # AI Trip Planner
 
 #### This project is an AI-powered trip-planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
+<br/>
 
 ![Full-Size-Screeshot](https://github.com/user-attachments/assets/64b411b3-713f-4e45-9191-564aea0fe269)
 <br />
@@ -22,20 +23,37 @@
 
 ## Clone the repository:
 
-`git clone: https://github.com/ganesh2925/AI-Trip-Planner`<br />
-`cd ai-trip-planner`
+```
+git clone: https://github.com/ganesh2925/AI-Trip-Planner
+```
+<br />
+
+```
+cd ai-trip-planner
+```
 
 ## Install dependencies:
 
-`npm install`
+```
+npm install
+```
 
 ## Set up environment variables:
-Rename .env.local.example to .env.local and fill in the necessary environment variables, including service API keys (Google Maps, AI API, etc.).
+
+Rename `.env.local.example` to `.env.local` and fill in the necessary environment variables, including service API keys (Google Maps, AI API, etc.).
 
 ## Run the development server:
 
-`npm run dev`<br />
-- The application will be running at `http://localhost:5173/`.
+```
+npm run dev
+```
+<br />
+
+- The application will be running at this URL:
+
+```
+http://localhost:5173/
+```
 
 ## Usage
 
@@ -68,9 +86,24 @@ Rename .env.local.example to .env.local and fill in the necessary environment va
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+- Contributions are welcome! Please follow these steps:
 1. Fork the repository.
-2. Create a new feature branch `git checkout -b feature/my-feature`.
-3. Commit your changes `git commit -m 'Add some feature`.
-4. Push to the branch `git push origin feature/my-feature`.
-5. Open a pull request.
+2. Create a new feature branch.
+
+```
+git checkout -b feature/my-feature
+```
+
+4. Commit your changes.
+
+```
+git commit -m 'Add some feature
+```
+
+5. Push to the branch.
+
+```
+git push origin feature/my-feature
+```
+
+6. Open a pull request.
