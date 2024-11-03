@@ -93,11 +93,27 @@ const CreateTrip = () => {
     navigate("/view-trip/" + docId);
   };
 
+  // const GetUserProfile = (tokenInfo) => {
+  //   axios
+  //     .get(
+  //       `https://www.googleapis.com/oauth2/v2/userinfo?acess_token=${tokenInfo?.access_token}`,
+  //       {
+  //         headers: {
+  //           Authorization: `Bearer ${tokenInfo?.access_token}`,
+  //           Accept: "Application/json",
+  //         },
+  //       }
+  //     )
+  //     .then((resp) => {
+  //       console.log(resp);
+  //       localStorage.setItem("user", JSON.stringify(resp?.data));
+  //       setOpenDailog(false);
+  //       OnGenerateTrip();
+  //     });
+  // };
   const GetUserProfile = (tokenInfo) => {
     axios
-      .get(
-        `https://www.googleapis.com/oauth2/v2/userinfo?acess_token=${tokenInfo?.access_token}`,
-        {
+      .get(`https://www.googleapis.com/oauth2/v2/userinfo`, {
           headers: {
             Authorization: `Bearer ${tokenInfo?.access_token}`,
             Accept: "Application/json",
