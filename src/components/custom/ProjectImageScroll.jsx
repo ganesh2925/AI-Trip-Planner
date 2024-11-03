@@ -17,7 +17,7 @@ export function HeroScrollDemo() {
         }>
         <img
           src={`/Full-Size-Screeshot.png`}
-          alt="hero"
+          alt="Project Eaxmple Image"
           height={720}
           width={1400}
           className="rounded-2xl object-cover max-xl:object-fill h-full object-left-top"

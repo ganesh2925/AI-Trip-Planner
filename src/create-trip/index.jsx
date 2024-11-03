@@ -52,7 +52,7 @@ const CreateTrip = () => {
       return;
     }
     if (
-      (formData?.NumberOfDays > 10 && !formData?.location) ||
+      (formData?.NumberOfDays > 5 && !formData?.location) ||
       !formData?.budget ||
       !formData?.traveler
     ) {
@@ -96,7 +96,7 @@ const CreateTrip = () => {
   const GetUserProfile = (tokenInfo) => {
     axios
       .get(
-        `https://www.googleapis.com/oauth2/v1/userinfo?acess_token=${tokenInfo?.access_token}`,
+        `https://www.googleapis.com/oauth2/v2/userinfo?acess_token=${tokenInfo?.access_token}`,
         {
           headers: {
             Authorization: `Bearer ${tokenInfo?.access_token}`,
@@ -133,7 +133,6 @@ const CreateTrip = () => {
                 place,
                 onChange: (v) => {
                   setPlace(v);
-                  // console.log(v);
                   handelInputChange("location", v);
                 },
               }}
