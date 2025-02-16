@@ -2,7 +2,10 @@
 
 #### This project is an AI-powered trip-planning tool that helps users create and visualize travel itineraries. Built using React, Vite, and TailwindCSS, it integrates with AI services to enhance the user experience.
 <br/>
-![Full-Size-Screeshot](https://github.com/user-attachments/assets/64b411b3-713f-4e45-9191-564aea0fe269)
+
+![378180170-64b411b3-713f-4e45-9191-564aea0fe269](https://github.com/user-attachments/assets/ebb25ac1-bd9a-4d4b-9e86-a25ce161b254)
+
+
 <br />
 
 ## Features
@@ -78,10 +81,22 @@ http://localhost:5173/
 
 ## Available Scripts
 
-- ```npm run dev```: Run the development server.
-- ```npm run build```: Create a production app build.
-- ```npm run serve```: Serve the production build locally.
-- ```npm run lint```: Run the linter to check for code issues.
+```
+  npm run dev
+```
+- Run the development server.
+```
+npm run build
+```
+- Create a production app build.
+```
+npm run serve
+```
+- Serve the production build locally.
+```
+npm run lint
+```
+- Run the linter to check for code issues.
 
 ## Contributing
 
