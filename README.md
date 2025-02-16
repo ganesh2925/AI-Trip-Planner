@@ -80,23 +80,24 @@ http://localhost:5173/
 `└── tailwind.config.js     # Tailwind CSS configuration`<br />
 
 ## Available Scripts
-
-```
-  npm run dev
-```
+<br />
 - Run the development server.
 ```
-npm run build
+npm run dev
 ```
 - Create a production app build.
 ```
-npm run serve
+npm run build
 ```
 - Serve the production build locally.
 ```
-npm run lint
+npm run serve
 ```
 - Run the linter to check for code issues.
+```
+npm run lint
+```
+<br />
 
 ## Contributing
 
