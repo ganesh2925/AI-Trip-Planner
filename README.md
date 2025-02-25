@@ -84,19 +84,27 @@ http://localhost:5173/
 
 ## Available Scripts
 <br />
+
 - Run the development server.
+- 
 ```
 npm run dev
 ```
+
 - Create a production app build.
+
 ```
 npm run build
 ```
+
 - Serve the production build locally.
+
 ```
 npm run serve
 ```
+
 - Run the linter to check for code issues.
+
 ```
 npm run lint
 ```
