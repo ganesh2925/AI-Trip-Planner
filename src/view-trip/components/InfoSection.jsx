@@ -5,32 +5,37 @@ import { GetPlaceDetails, PHOTO_REF_URL } from "@/service/GlobalApi";
 
 const InfoSection = ({ trip }) => {
   const [photoUrl, setPhotoUrl] = useState();
+
   useEffect(() => {
-    trip && GetPlacePhoto();
+    if (trip?.userSelection?.location?.label) {
+      GetPlacePhoto();
+    }
   }, [trip]);
 
   const GetPlacePhoto = async () => {
     const data = {
-      textQuery: trip?.userSelection?.location?.label,
+      textQuery: trip.userSelection.location.label,
     };
     try {
       const result = await GetPlaceDetails(data);
-
-      const PhotoUrl = PHOTO_REF_URL.replace(
-        "{NAME}",
-        result.data.places[0].photos[9].name
-      );
-
-      setPhotoUrl(PhotoUrl);
+      const photos = result?.data?.places?.[0]?.photos;
+      if (photos && photos.length > 0) {
+        const photoRef = photos[Math.min(7, photos.length - 1)].name;
+        const photoUrl = PHOTO_REF_URL.replace("{NAME}", photoRef);
+        setPhotoUrl(photoUrl);
+      } else {
+        setPhotoUrl(null); // fallback to default
+      }
     } catch (error) {
-      console.log(error);
+      console.error("Failed to fetch photo:", error);
+      setPhotoUrl(null);
     }
   };
 
   return (
     <div>
       <img
-        src={photoUrl?photoUrl:'/flight.jpg'}
+        src={photoUrl || "/flight.jpg"}
         alt="City Image"
         className="h-[400px] w-full object-cover rounded-xl"
       />
@@ -48,7 +53,7 @@ const InfoSection = ({ trip }) => {
               💸 {trip?.userSelection?.budget} Budget
             </h2>
             <h2 className="p-1 px-3 bg-gray-200 rounded-full text-gray-500 text-xs md:text-md">
-              👣 No of Traveler:{trip?.userSelection?.traveler}
+              👣 No of Traveler: {trip?.userSelection?.traveler}
             </h2>
           </div>
         </div>

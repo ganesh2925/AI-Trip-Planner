@@ -7,12 +7,13 @@ export function MacbookScrollDemo() {
     <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
       <MacbookScroll
         title={
-            <h1 className="text-4xl max-sm:text-lg font-semibold text-black dark:text-white">
-            EVAGUY (AI Trip Planner) Desigin by Group Number 345 Under the Guidance of<br />
-              <span className="text-4xl max-sm:text-xl md:text-[2rem] font-bold mt-1 mb-2 leading-[80px] max-sm:leading-none">
-            ASSISTANT.PROFESSOR GAURAV VARSHENEY
-              </span>
-            </h1>
+          <div className="text-4xl max-sm:text-lg font-semibold text-black dark:text-white">
+            <h1>EVAGUY (AI Trip Planner) Designed by (KUMILI GANESH)</h1>
+            <p className="text-4xl max-sm:text-xl md:text-[2rem] font-bold mt-1 mb-2 leading-[80px] max-sm:leading-none">
+              UNDER THE GUIDANCE OF <br />
+              ASSISTANT PROFESSOR GAURAV VARSHENEY
+            </p>
+          </div>
         }
         badge={
           <Link href="https://peerlist.io/manuarora">
@@ -30,7 +31,7 @@ const Badge = ({ className }) => {
   return (
     <svg
       width="24"
-      height="24"
+      height="10"
       viewBox="0 0 56 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

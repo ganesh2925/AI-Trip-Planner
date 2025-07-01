@@ -8,7 +8,7 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl max-sm:text-lg font-semibold text-black dark:text-white">
-            EVAGUY (AI Trip Planner) Desigin by Group Number 345 Under the Guidance of<br />
+            EVAGUY (AI Trip Planner) Desigined by (KUMILI GANESH) Team Number 345 Under the Guidance of<br />
               <span className="text-4xl max-sm:text-xl md:text-[2rem] font-bold mt-1 mb-2 leading-[80px] max-sm:leading-none">
             ASSISTANT.PROFESSOR GAURAV VARSHENEY
               </span>

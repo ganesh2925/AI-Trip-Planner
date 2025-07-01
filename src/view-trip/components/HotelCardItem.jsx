@@ -17,7 +17,7 @@ function HotelCardItem({ hotel }) {
 
       const PhotoUrl = PHOTO_REF_URL.replace(
         "{NAME}",
-        result.data.places[0].photos[3].name
+        result.data.places[0].photos[0].name
       );
 
       setPhotoUrl(PhotoUrl);

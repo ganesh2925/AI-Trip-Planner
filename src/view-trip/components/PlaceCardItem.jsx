@@ -19,7 +19,7 @@ function PlaceCardItem({ place }) {
 
       const PhotoUrl = PHOTO_REF_URL.replace(
         "{NAME}",
-        result.data.places[0].photos[9].name
+        result.data.places[0].photos[1].name
       );
 
       setPhotoUrl(PhotoUrl);
