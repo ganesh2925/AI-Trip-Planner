@@ -72,9 +72,15 @@ const CreateTrip = () => {
           .replace("{traveler}", formData?.traveler)
           .replace("{budget}", formData?.budget)
           .replace("{totalDays}", formData?.noofDays);
-        const result = await chatSession.sendMessage(FINAL_PROMPT);
-        setLoading(false);
-        SaveAiTrip(result?.response?.text());
+        try {
+          const result = await chatSession.sendMessage(FINAL_PROMPT);
+          setLoading(false);
+          SaveAiTrip(result?.response?.text());
+        } catch (error) {
+          toast.warning("Something went wrong");
+          setLoading(false);
+          console.log(error);
+        }
       }
     }
   };
